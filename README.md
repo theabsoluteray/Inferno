@@ -1,2 +1,2 @@
 # Inferno
-Discord nuker selfbot 
+# Discord nuker selfbot 
