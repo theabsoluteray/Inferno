@@ -183,49 +183,49 @@ class inferno:
                     'name':
                     'fcked by ray ',
                     'url':
-                    'https://media.discordapp.net/attachments/1005729774351691776/1014038921002373150/a_18520f6f7947e5acfdffe8e63b748c2e.gif?width=221&height=221',
+                    'https://media.discordapp.net/attachments/1115114167129604187/1131591202572095520/VN20230701_171750_AdobeExpress0.gif?width=405&height=162',
                     'icon_url':
-                    'https://media.discordapp.net/attachments/1005729774351691776/1014038919836336198/a_04d536f4606dd36b6d154ede2401e8e1.gif?width=405&height=162'
+                    'https://media.discordapp.net/attachments/1115114167129604187/1131591202572095520/VN20230701_171750_AdobeExpress0.gif?width=405&height=162'
                 },
                 'footer': {
                     'text':
                      spam_messages,
                     'icon_url':
-                    'https://media.discordapp.net/attachments/1005729774351691776/1014038919836336198/a_04d536f4606dd36b6d154ede2401e8e1.gif?width=405&height=162'
+                    'https://media.discordapp.net/attachments/1115114167129604187/1131591202572095520/VN20230701_171750_AdobeExpress0.gif?width=405&height=162'
                 },
                 'image': {
                     'url':
-                    'https://media.discordapp.net/attachments/1005729774351691776/1014038921002373150/a_18520f6f7947e5acfdffe8e63b748c2e.gif?width=221&height=221'
+                    'https://media.discordapp.net/attachments/1115114167129604187/1131591202572095520/VN20230701_171750_AdobeExpress0.gif?width=221&height=221'
                 },
                 'thumbnail': {
                     'url':
-                    'https://media.discordapp.net/attachments/1005729774351691776/1014038919836336198/a_04d536f4606dd36b6d154ede2401e8e1.gif?width=405&height=162'
+                    'https://media.discordapp.net/attachments/1115114167129604187/1131591202572095520/VN20230701_171750_AdobeExpress0.gif?width=405&height=162'
                 }
             }, {
                 'url':
-                'https://media.discordapp.net/attachments/1005729774351691776/1014038921002373150/a_18520f6f7947e5acfdffe8e63b748c2e.gif?width=221&height=221',
+                'https://media.discordapp.net/attachments/1115114167129604187/1131591202572095520/VN20230701_171750_AdobeExpress0.gif?width=221&height=221',
                 'image': {
                     'url':
-                    'https://media.discordapp.net/attachments/1005729774351691776/1014038919836336198/a_04d536f4606dd36b6d154ede2401e8e1.gif?width=405&height=162'
+                    https://media.discordapp.net/attachments/1115114167129604187/1131591202572095520/VN20230701_171750_AdobeExpress0.gif?width=405&height=162'
                 }
             }, {
                 'url':
-                'https://media.discordapp.net/attachments/1005729774351691776/1014038919836336198/a_04d536f4606dd36b6d154ede2401e8e1.gif?width=405&height=162',
+                'https://media.discordapp.net/attachments/1115114167129604187/1131591202572095520/VN20230701_171750_AdobeExpress0.gif?width=405&height=162',
                 'image': {
                     'url':
-                    'https://media.discordapp.net/attachments/1005729774351691776/1014038919836336198/a_04d536f4606dd36b6d154ede2401e8e1.gif?width=405&height=162'
+                    'https://media.discordapp.net/attachments/1115114167129604187/1131591202572095520/VN20230701_171750_AdobeExpress0.gif?width=405&height=162'
                 }
             }, {
                 'url': 'https://discord.gg/animeontop',
                 'image': {
                     'url':
-                    'https://media.discordapp.net/attachments/1005729774351691776/1014038919836336198/a_04d536f4606dd36b6d154ede2401e8e1.gif?width=405&height=162'
+                    'https://media.discordapp.net/attachments/1115114167129604187/1131591202572095520/VN20230701_171750_AdobeExpress0.gif?width=405&height=162'
                 }
             }],
             'username':
             'ray was here',
             'avatar_url':
-            'https://media.discordapp.net/attachments/1005729774351691776/1014038919836336198/a_04d536f4606dd36b6d154ede2401e8e1.gif?width=405&height=162'
+            'https://media.discordapp.net/attachments/1115114167129604187/1131591202572095520/VN20230701_171750_AdobeExpress0.gif?width=405&height=162'
         }
                 spaming = requests.post(webhook, json=data, proxies=proxy)
                 spammingerror = spaming.text
