@@ -28,10 +28,9 @@ except:
 proxy = None
 
 with open('Data/config.json') as f:
-    config = json.load(f)
   open('Data/config.json', 'w') as f:
-        print("\n\033[91m>\033[39m Config file not found, creating one")
-        token = input("\n\033[91m>\033[39m Enter your token: ")
+  token = input("\n\033[91m>\033[39m Enter your token: ")
+    config = json.load(f)
 
 prefix = config.get('Prefix')
 proxyask = input("\n\033[91m>\033[39m Do you want to use proxy? (1) Yes (2) No: ")
