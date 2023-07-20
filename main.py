@@ -26,10 +26,9 @@ except:
     os.system('clear')
     os.system('title [inferno Nuker] - Starting & mode 69,20')
 proxy = None
-token = input('\x1b[38;5;213m[\033[37m-\x1b[38;5;213m]\033[37m Enter your Token : ')
 with open('Data/config.json') as f:
     config = json.load(f)
-
+token = input('\x1b[38;5;213m[\033[37m-\x1b[38;5;213m]\033[37m Enter your Token : ')
 
 prefix = config.get('Prefix')
 proxyask = input("\n\033[91m>\033[39m Do you want to use proxy? (1) Yes (2) No: ")
