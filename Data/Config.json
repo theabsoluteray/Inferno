@@ -1,1 +1,29 @@
 
+{
+    "Token": "MTExMjY0ODQxNjgwNDIwODY5MQ.Gf0wHW.Onv9Ezo4_0SFhNz4Db85jjtdDaZuOD_rp6DhXY",
+    "Prefix": ".",
+    "Channel-Names": [
+        "ray xD was here",
+        "ray xD ruined you"
+    ],
+    "Server-Names": [
+        "ray xD destroyed you"
+    ],
+    "Role-Names": [
+        "ray xD was here",
+        "ray xD ruined you"
+    ],
+    "Reason": [
+        "beamed by ray xD",
+        "ray xD fucked me"
+    ],
+    "Spam": true,
+    "Webhook-Names": [
+        "ray xD was here",
+        "get beamed by ray xD"
+    ],
+    "name": "ray xD",
+    "Spam-Messages": "@everyone ray xD WIZZED YOU",
+    "Spam-Invite": "@everyone fuck you https://discord.gg/animeontop",
+    "Spam-Amount": 10000
+}
