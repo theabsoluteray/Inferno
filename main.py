@@ -207,7 +207,7 @@ class inferno:
                 'https://media.discordapp.net/attachments/1115114167129604187/1131591202572095520/VN20230701_171750_AdobeExpress0.gif?width=221&height=221',
                 'image': {
                     'url':
-                    https://media.discordapp.net/attachments/1115114167129604187/1131591202572095520/VN20230701_171750_AdobeExpress0.gif?width=405&height=162'
+                    'https://media.discordapp.net/attachments/1115114167129604187/1131591202572095520/VN20230701_171750_AdobeExpress0.gif?width=405&height=162'
                 }
             }, {
                 'url':
