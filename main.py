@@ -26,15 +26,16 @@ except:
     os.system('clear')
     os.system('title [inferno Nuker] - Starting & mode 69,20')
 proxy = None
-with open('data/config.json') as f:
+token = input('\x1b[38;5;213m[\033[37m-\x1b[38;5;213m]\033[37m Enter your Token : ')
+with open('Data/config.json') as f:
     config = json.load(f)
-token = config.get('Token')
+
 
 prefix = config.get('Prefix')
 proxyask = input("\n\033[91m>\033[39m Do you want to use proxy? (1) Yes (2) No: ")
 if proxyask == "1":
     print("\033[91m>\033[39m Proxy Enabled")
-    with open ('data/proxies.txt', 'r') as f:
+    with open ('Data/proxies.txt', 'r') as f:
         proxies = f.read().splitlines()
         proxy1 = random.choice(proxies)
         proxy = {'http': proxy1, 'https': proxy1}
