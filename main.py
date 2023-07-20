@@ -495,7 +495,7 @@ ______  _____   __
 
         while True:
             try:
-                Thread(target=Seesh.DelChannel, args=(guild.id, channels[cnum],)).start()
+                Thread(target=inferno.DelChannel, args=(guild.id, channels[cnum],)).start()
                 cnum += 1
             except IndexError:
                 break
