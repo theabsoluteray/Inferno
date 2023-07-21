@@ -25,15 +25,38 @@ try:
 except:
     os.system('clear')
     os.system('title [inferno Nuker] - Starting & mode 69,20')
+  try:
+    with open('data/config.json') as f:
+        config = json.load(f)
+except:
+    with open('data/config.json', 'w') as f:
+        print("\n\033[91m>\033[39m Config file not found, creating one")
+        token = input("\n\033[91m>\033[39m Enter your token: ")
+        prefix = input("\n\033[91m>\033[39m Enter your prefix: ")
+        nuke_name = input("\n\033[91m>\033[39m Enter your nuked by: ")
+        invite_link = input("\n\033[91m>\033[39m Enter your Spam Invite Link: ")
+        json.dump({"Token": token,
+    "Prefix": prefix,
+    "Channel-Names": [nuke_name+" was here", nuke_name+" ruined you"], 
+	"Server-Names": [nuke_name+" destroyed you"],
+	"Role-Names": [nuke_name+" was here", nuke_name+" ruined you"],
+	"Reason": ["beamed by "+nuke_name, nuke_name+" fucked me"],
+	"Spam": True,
+	"Webhook-Names": [nuke_name+" was here", "get beamed by "+nuke_name],
+    "name": nuke_name,
+	"Spam-Messages": "@everyone "+nuke_name+" WIZZED YOU",
+    "Spam-Invite": '@everyone fuck you '+invite_link,
+	"Spam-Amount": 10000}, f, indent=4)
+    input("\n\033[91m>\033[39m Press Enter To Proceed")
+    pass
 proxy = None
 
 with open('Data/config.json') as f:
   
     config = json.load(f)
 with open('Data/config.json', 'w') as f:
-  token = input("\n\033[91m>\033[39m Enter your token: ")
-
-prefix = config.get('Prefix')
+  token = config.get('Token')
+  prefix = config.get('Prefix')
 proxyask = input("\n\033[91m>\033[39m Do you want to use proxy? (1) Yes (2) No: ")
 if proxyask == "1":
     print("\033[91m>\033[39m Proxy Enabled")
