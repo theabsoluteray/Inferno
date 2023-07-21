@@ -31,11 +31,10 @@ try:
 except:
     with open('Data/config.json', 'w') as f:
         print("\n\033[91m>\033[39m Config file not found, creating one")
-        token = input("\n\033[91m>\033[39m Enter your token: ")
         prefix = input("\n\033[91m>\033[39m Enter your prefix: ")
         nuke_name = input("\n\033[91m>\033[39m Enter your nuked by: ")
         invite_link = input("\n\033[91m>\033[39m Enter your Spam Invite Link: ")
-        json.dump({"Token": token,
+        json.dump({
     "Prefix": prefix,
     "Channel-Names": [nuke_name+" was here", nuke_name+" ruined you"], 
 	"Server-Names": [nuke_name+" destroyed you"],
@@ -52,7 +51,7 @@ except:
 proxy = None
 with open('Data/config.json') as f:
     config = json.load(f)
-token = config.get('Token')
+token= input("\n\033[91m>\033[39m Enter your token: ")
 
 prefix = config.get('Prefix')
 proxyask = input("\n\033[91m>\033[39m Do you want to use proxy? (1) Yes (2) No: ")
