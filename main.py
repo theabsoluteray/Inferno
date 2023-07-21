@@ -25,11 +25,11 @@ try:
 except:
     os.system('clear')
     os.system('title [inferno Nuker] - Starting & mode 69,20')
-  try:
-    with open('data/config.json') as f:
+try:
+    with open('Data/config.json') as f:
         config = json.load(f)
 except:
-    with open('data/config.json', 'w') as f:
+    with open('Data/config.json', 'w') as f:
         print("\n\033[91m>\033[39m Config file not found, creating one")
         token = input("\n\033[91m>\033[39m Enter your token: ")
         prefix = input("\n\033[91m>\033[39m Enter your prefix: ")
