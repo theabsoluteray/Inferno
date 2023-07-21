@@ -87,7 +87,7 @@ if token_type == "user":
     client = commands.Bot(command_prefix=prefix, case_insensitive=False, self_bot=True)
 else:
     headers = {'Authorization': f'Bot {token}'}
-    client = commands.Bot(command_prefix=prefix, case_insensitive=False, self_bot=False, intents=discord.Intents().all())
+    client = commands.Bot(command_prefix=prefix, case_insensitive=False, self_bot=False)
 client.remove_command("help")
 
 async def memberids(guildID):
