@@ -30,7 +30,7 @@ proxy = None
 with open('Data/config.json') as f:
   
     config = json.load(f)
-with open('data/config.json', 'w') as f:
+with open('Data/config.json', 'w') as f:
   token = input("\n\033[91m>\033[39m Enter your token: ")
 
 prefix = config.get('Prefix')
