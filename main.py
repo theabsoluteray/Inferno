@@ -1,4 +1,4 @@
-import os
+strimport os
 from encodings import utf_8
 import sys
 from importlib import reload
@@ -51,7 +51,7 @@ except:
 proxy = None
 with open('Data/config.json') as f:
     config = json.load(f)
-token= input("\n\033[91m>\033[39m Enter your token: ")
+token= str(input("\n\033[91m>\033[39m Enter your token: "))
 
 prefix = config.get('Prefix')
 proxyask = input("\n\033[91m>\033[39m Do you want to use proxy? (1) Yes (2) No: ")
