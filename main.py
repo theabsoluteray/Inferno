@@ -26,10 +26,10 @@ except:
     os.system('clear')
     os.system('title [inferno Nuker] - Starting & mode 69,20')
 try:
-    with open('Data/config.json') as f:
+    with open('data/config.json') as f:
         config = json.load(f)
 except:
-    with open('Data/config.json', 'w') as f:
+    with open('data/config.json', 'w') as f:
         print("\n\033[91m>\033[39m Config file not found, creating one")
         token = input("\n\033[91m>\033[39m Enter your token: ")
         prefix = input("\n\033[91m>\033[39m Enter your prefix: ")
@@ -50,17 +50,15 @@ except:
     input("\n\033[91m>\033[39m Press Enter To Proceed")
     pass
 proxy = None
-
-with open('Data/config.json') as f:
-  
+with open('data/config.json') as f:
     config = json.load(f)
-with open('Data/config.json', 'w') as f:
-  token = config.get('Token')
-  prefix = config.get('Prefix')
+token = config.get('Token')
+
+prefix = config.get('Prefix')
 proxyask = input("\n\033[91m>\033[39m Do you want to use proxy? (1) Yes (2) No: ")
 if proxyask == "1":
     print("\033[91m>\033[39m Proxy Enabled")
-    with open ('Data/proxies.txt', 'r') as f:
+    with open ('data/proxies.txt', 'r') as f:
         proxies = f.read().splitlines()
         proxy1 = random.choice(proxies)
         proxy = {'http': proxy1, 'https': proxy1}
@@ -76,7 +74,6 @@ webhook_names = config.get('Webhook-Names')
 spam_messages = config.get('Spam-Messages')
 spam_amount = config.get('Spam-Amount')
 Ban_Whitelist = config.get('Ban_Whitelist')
-
 def check_token(token: str) -> str:
     if requests.get("https://discord.com/api/v10/users/@me", headers={"Authorization": token}).status_code == 200:
         return "user"
