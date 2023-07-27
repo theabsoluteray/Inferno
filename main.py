@@ -31,8 +31,7 @@ try:
 except:
     with open('Data/config.json', 'w') as f:
         print("\n\033[91m>\033[39m Config file not found, creating one")
-        token=input("\n\033[91m>\033[39m Enter your 
-token: ")
+        token=input("\n\033[91m>\033[39m Enter your token: ")
         prefix = input("\n\033[91m>\033[39m Enter your prefix: ")
         nuke_name = input("\n\033[91m>\033[39m Enter your nuked by: ")
         invite_link = input("\n\033[91m>\033[39m Enter your Spam Invite Link: ")
