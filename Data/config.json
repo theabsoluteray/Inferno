@@ -1,4 +1,5 @@
 {
+    "Token":"token",
     "Prefix": "ray.",
     "Channel-Names": [
         "ray was here",
