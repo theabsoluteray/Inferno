@@ -104,7 +104,7 @@ async def memberids(guildID):
     with open('Scraped/members.txt', 'a') as f:
         for member in guild.members:
             membercount += 1
-            f.write(str(member.id) + "\n")
+            f.write(f"{member.id}\n")
         print(f"\x1b[38;5;213m[\033[37m!\x1b[38;5;213m]\033[37m Scraped \x1b[38;5;213m{membercount}\033[37m Members")
 
 async def roleids(guildID):
@@ -122,7 +122,7 @@ async def roleids(guildID):
     with open('Scraped/roles.txt', 'a') as f:
         for role in guild.roles:
             rolecount += 1
-            f.write(str(role.id) + "\n")
+            f.write(f"{role.id}\n")
         print(f"\x1b[38;5;213m[\033[37m!\x1b[38;5;213m]\033[37m Scraped \x1b[38;5;213m{rolecount}\033[37m Roles")  
 
 async def channelids(guildID):
@@ -140,7 +140,7 @@ async def channelids(guildID):
     with open('Scraped/channels.txt', 'a') as f:
         for channel in guild.channels:
             channelcount += 1
-            f.write(str(channel.id) + "\n")
+            f.write(f"{channel.id}\n")
         print(f"\x1b[38;5;213m[\033[37m!\x1b[38;5;213m]\033[37m Scraped \x1b[38;5;213m{channelcount}\033[37m Channels")    
 class inferno:
 
